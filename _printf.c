@@ -99,4 +99,3 @@ int _printf(const char *format, ...)
 	return (total_len);
 }
 
-
