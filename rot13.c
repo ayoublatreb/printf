@@ -28,7 +28,9 @@ char *rot13(va_list list)
 			nstr[i] = str[i] - 13;
 		}
 		else
+		{
 			(nstr[i] = str[i]);
+		}
 		i++;
 	}
 	nstr[i] = '\0';
