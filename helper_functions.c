@@ -22,7 +22,7 @@ char* (*get_func(char i))(va_list)
 		{'\0', NULL}
 	};
 
-	while ( keys[k].id != '\0')
+	while (keys[k].id != '\0')
 	{
 		if (keys[k].id == i)
 			return (keys[k].func);
@@ -54,6 +54,7 @@ char *create_buffer(void)
 void write_buffer(char *buffer, int len, va_list list)
 {
 	char *buff;
+
 	buff = realloc(buffer, len);
 	write(1, buff, len);
 
