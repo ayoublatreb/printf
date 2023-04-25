@@ -10,7 +10,7 @@ int check_buffer(char *buffer, int len)
 {
 	if (len > 1020)
 	{
-		write(1. buffer, len);
+		write(1, buffer, len);
 		len = 0;
 	}
 	return (len);
@@ -74,7 +74,7 @@ int _printf(const char *format, ...)
 					if (str == NULL)
 					{
 						va_end(list);
-						free(bufffer);
+						free(buffer);
 						return (-1);
 					}
 					if (format[i] == 'c' && str[0] == '\0')
