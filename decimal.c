@@ -37,7 +37,7 @@ char *_itos(int div, int length, int n)
 		div /= 10;
 		i++;
 	}
-	str[i] = '\0'
+	str[i] = '\0';
 	return (str);
 }
 
@@ -49,6 +49,8 @@ char *_itos(int div, int length, int n)
 char *print_d(va_list list)
 {
 	int length, div, n, temp;
+
+	length = 0;
 
 	n = va_arg(list, int);
 	temp = n;
