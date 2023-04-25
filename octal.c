@@ -17,7 +17,7 @@ char *itOctal(va_list list)
 
 	s = malloc(sizeof(char) * 12);
 	if (s == NULL)
-		reurn (NULL);
+		return (NULL);
 
 	if (k < 0)
 	{
