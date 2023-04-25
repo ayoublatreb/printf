@@ -36,7 +36,7 @@ char *itob(va_list list)
 	while (twos > 0)
 	{
 		s[j++] = ( i / twos + '0');
-		i % twos;
+		i %= twos;
 		twos /= 2;
 	}
 
